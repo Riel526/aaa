@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe5e5;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  gap: 20px; /* Space between items */
+  text-align: center;
+  align-items: center;
+  max-width: 900px; /* Adjust the container width for 3 GIFs */
+  margin: 20px;
+  position: absolute;
+}
+
+.container .tenor-gif-embed {
+  width: 100%; /* Ensure the GIFs fit the column width */
+  max-width: 250px; /* Optional: limit maximum width of GIFs */
+}
+
+.container .btn {
+  display: flex;
+  gap: 25px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #111;
+  background: #fff;
+  padding: 10px 25px;
+  border-radius: 8px;
+  box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+}
+
+#move-random {
+  transition: top 0.2s ease-in-out, left 0.2s ease-in-out; /* Smooth movement */
+}
